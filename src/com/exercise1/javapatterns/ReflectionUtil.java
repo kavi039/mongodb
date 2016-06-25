@@ -1,3 +1,5 @@
+package com.exercise1.javapatterns;
+
 import java.util.ResourceBundle;
 
 /**
