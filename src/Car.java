@@ -8,10 +8,15 @@ public class Car {
     Engine engine;
     Wheel wheel;
 
-    public static void main(String[] args) {
-        SimpleWheel object = ReflectionUtil.get("car.simple.wheel");
-        System.out.println( object);
-
+    Car(Engine engine,Wheel wheel){
+        this.engine=engine;
+        this.wheel=wheel;
     }
+
+    void drive(){
+        System.out.println("speed of car : "+engine.getCanRun());
+        System.out.println("Duration of car : "+wheel.getDuration());
+    }
+
 
 }
